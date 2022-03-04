@@ -1,6 +1,5 @@
 // закрытие блока поиска при клике на другую область 
 //! переписать directionDetermination
-// переключение на Фарингейт
 
 import React from 'react';
 import axios from 'axios';
