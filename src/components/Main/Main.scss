@@ -1,0 +1,32 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+    font-size: 30px;
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+
+    //   :first-child {
+    //     height: 139px;
+    //     align-self: center;
+    //   }
+
+    //   :last-child {
+    //     font-size: 130px;
+    //   }
+    }
+
+    &__data {
+        &-temper {
+            font-size: 130px;
+        }
+        &-description {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}

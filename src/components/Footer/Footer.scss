@@ -1,0 +1,16 @@
+
+  .Footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    &__data {
+        padding-bottom: 10px;
+        font-size: 25px;
+        :first-child {
+            opacity: 0.6;
+      
+        }
+    }
+
+  }

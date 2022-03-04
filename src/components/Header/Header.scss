@@ -1,0 +1,140 @@
+.Header {
+    height: 60px;
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__searchBar {
+        min-width: 250px;
+
+        ul {
+            border: 1px solid #a2a9b1;
+            border-radius: 2px;
+            margin-top: 1px;
+            background-color: white;
+            position: absolute;
+            -webkit-box-shadow: 0 7px 15px #00000050;
+            box-shadow: 0 7px 15px #00000050;
+            width: 196px;
+            list-style-type: none;
+            padding: 0.5em;
+
+            li {
+                line-height: 1.5em;
+                cursor: pointer;
+                padding: 4px;
+
+                &:hover {
+                    background: #ccc;
+                }
+            }
+        }
+
+        &-searchInput {
+            background-color: white;
+            color: #000000;
+            height: 2em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #a2a9b1;
+            border-radius: 2px;
+            padding: 5px;
+            -webkit-box-shadow: inset 0 0 0 1px transparent;
+            box-shadow: inset 0 0 0 1px transparent;
+            font-family: inherit;
+            -webkit-transition: border-color 250ms, -webkit-box-shadow 250ms;
+            transition: border-color 250ms, -webkit-box-shadow 250ms;
+            transition: border-color 250ms, box-shadow 250ms;
+            transition: border-color 250ms, box-shadow 250ms, -webkit-box-shadow 250ms;
+        }
+
+        &__geoPosition {
+            &-wrapper {
+                display: flex;
+            }
+
+            &-blockButton {
+                opacity: 0.4;
+                border: 1px solid #FFFFFF;
+                border-radius: 8px;
+                font-size: 18px;
+                height: 29px;
+                width: 78px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                span {
+                    position: absolute;
+                    right: 88px;
+                }
+
+                :last-child {
+                    border-radius: 0px 8px 8px 0;
+                }
+                :first-child {
+                    border-radius: 8px 0 0 8px;
+                }
+                div {
+                    cursor: pointer;
+                    height: 27px;
+                    align-self: end;
+                    display: flex;
+                    align-items: center;
+                    width: 39px;
+                    justify-content: center;
+                    &:hover {
+                        opacity: 1;
+                        color: #FFFFFF;
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+
+            &-сityName {
+                font-size: 50px;
+                color: #FFFFFF;
+                padding-bottom: 9px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+
+            &-location {
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                opacity: 0.6;
+                cursor: pointer;
+                padding-left: 10px;
+                align-self: center;
+            }
+
+            &-changeCity {
+                padding-right: 30px;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                opacity: 0.6;
+                cursor: pointer;
+                align-self: center;
+            }
+        }
+    }
+}
+.clear {
+    position: absolute;
+    height: 18px;
+    cursor: pointer;
+    z-index: 2;
+    left: 170px;
+    top: 4px;
+}
+
+.bgBtnSwitch {
+    opacity: 1;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
